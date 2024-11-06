@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: rag-nov6-4-v-model-server
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rag-nov6-4-v-model-server
+  name: rag-nov6-4-v-model-server
+spec:
+  ports:
+  - port: 8001
+    protocol: TCP
+    targetPort: 8001
+  selector:
+    app.kubernetes.io/instance: rag-nov6-4-v-model-server

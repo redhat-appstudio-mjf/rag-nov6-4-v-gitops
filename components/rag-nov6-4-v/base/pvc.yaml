@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: rag-nov6-4-v
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rag-nov6-4-v 
+  name: rag-nov6-4-v
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi

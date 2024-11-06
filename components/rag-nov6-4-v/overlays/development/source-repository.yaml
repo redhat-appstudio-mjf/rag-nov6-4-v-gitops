@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: rag-nov6-4-v-repository
+spec:
+  url: https://github.com/redhat-appstudio-mjf/rag-nov6-4-v
